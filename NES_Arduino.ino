@@ -41,7 +41,6 @@ int latchPin = 3; // Orange wire
 int dataPin = 4; // Yellow wire
 
 byte ctrlRegister = 0;
-byte lastState = 0;
 
 Joystick_ joystick;
 
