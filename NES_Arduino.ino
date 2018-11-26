@@ -113,49 +113,49 @@ byte readNESCtrl() {
 	digitalWrite(latchPin, LOW);
 
 	if (digitalRead(dataPin) == 0)
-		bitClear(tmp, B_A);
+		bitClear(tmp, buttons[0]);
 
 	digitalWrite(clkPin, HIGH);
 	digitalWrite(clkPin, LOW);
 
 	if (digitalRead(dataPin) == 0)
-		bitClear(tmp, B_B);
-
+		bitClear(tmp, buttons[1]);
+	
 	digitalWrite(clkPin, HIGH);
 	digitalWrite(clkPin, LOW);
 
 	if (digitalRead(dataPin) == 0)
-		bitClear(tmp, B_SELECT);
-
+		bitClear(tmp, buttons[2]);
+	
 	digitalWrite(clkPin, HIGH);
 	digitalWrite(clkPin, LOW);
 
 	if (digitalRead(dataPin) == 0)
-		bitClear(tmp, B_START);
-
+		bitClear(tmp, buttons[3]);
+	
 	digitalWrite(clkPin, HIGH);
 	digitalWrite(clkPin, LOW);
 
 	if (digitalRead(dataPin) == 0)
-		bitClear(tmp, B_UP);
-
+		bitClear(tmp, buttons[4]);
+	
 	digitalWrite(clkPin, HIGH);
 	digitalWrite(clkPin, LOW);
 
 	if (digitalRead(dataPin) == 0)
-		bitClear(tmp, B_DOWN);
-
+		bitClear(tmp, buttons[5]);
+	
 	digitalWrite(clkPin, HIGH);
 	digitalWrite(clkPin, LOW);
 
 	if (digitalRead(dataPin) == 0)
-		bitClear(tmp, B_LEFT);
-
+		bitClear(tmp, buttons[6]);
+	
 	digitalWrite(clkPin, HIGH);
 	digitalWrite(clkPin, LOW);
 
 	if (digitalRead(dataPin) == 0)
-		bitClear(tmp, B_RIGHT);
-
+		bitClear(tmp, buttons[7]);
+	
 	return tmp;
 }
